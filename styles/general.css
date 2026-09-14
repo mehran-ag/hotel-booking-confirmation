@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root {
+
+  --Neutral-900: hsl(33, 15%, 15%);
+  --Neutral-800: hsl(33, 22%, 20%);
+  --Neutral-700: hsl(32, 20%, 29%);
+  --Neutral-600: hsl(33, 17%, 41%);
+  --Neutral-400: hsl(36, 22%, 86%);
+  --Neutral-200: hsl(30, 24%, 93%);
+  --Neutral-100: hsl(35, 60%, 96%);
+  --Neutral-50: hsl(40, 60%, 98%);
+  --Neutral-0: hsl(0, 0%, 100%);
+
+  --Sun-500: hsl(42, 83%, 58%);
+  --Sun-300: hsl(44, 84%, 75%);
+  --Sun-200: hsl(45, 100%, 74%);
+  --Sun-50: hsl(41, 100%, 93%);
+
+  --Terracotta-700: hsl(15, 69%, 37%);
+  --Terracotta-600: hsl(15, 74%, 41%);
+  --Terracotta-500: hsl(18, 62%, 47%);
+  --Terracotta-400: hsl(22, 72%, 56%);
+
+  --Blue-500: hsl(230, 49%, 56%);
+
+  --Rose-500: hsl(340, 48%, 52%);
+
+  --p-font: 14px;
+}
+
+.fraunces-400-reg {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+.fraunces-400-italic {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+.dm-sans-400 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-sans-500 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dm-sans-600 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.dm-mono-regular {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-mono-medium {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  box-sizing: border-box;
+}

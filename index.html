@@ -13,59 +13,162 @@
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/body.css">
 </head>
 <body>
 
   <!-- Sidebar starts -->
+  <aside class="sidebar">
+    <div class="sidebar__profile">
+      <div class="sidevar__img-container"></div>
+      <img  src="assets/images/icon-sun.svg">
+      <p class="sidebar__name">
+        <span class="sidebar__first-name">Maison</span> Soleil
+      </p>
+    </div>
 
-  Maison Soleil
+      <!-- Guest navigation -->
+    <nav class="sidebar__nav">
+      <a href="#" class="sidebar__link">
+        <span class="sidebar__link-text">Your stay</span>
+        <span class="sidebar__notification">1</span>
+      </a>
+      <a href="#" class="sidebar__link">The house</a>
+      <a href="#" class="sidebar__link">Around town</a>
+      <a href="#" class="sidebar__link">Breakfast</a>
+      <a href="#" class="sidebar__link">Messages</a>
+    </nav>
 
-  <!-- Guest navigation -->
-  Your stay
-  1
-  The house
-  Around town
-  Breakfast
-  Messages
+    <!-- Local weather -->
+    <div class="sidebar__weather-card">
+      <p class="sidebar__weather__location">Today in Cassis</p>
+      <p class="sidebar__weather__temperature">27°</p>
+      <p class="sidebar__weather__condition">Sunny · light breeze</p>
+    </div>
 
-  <!-- Local weather -->
-  Today in Cassis
-  27°
-  Sunny · light breeze
-
-  Est. 1987
-  Maison Soleil · 12 Rue des Oliviers · Cassis
-  © 2026 Maison Soleil
-
-  <!-- Sidebar ends -->
+    <!-- Sidebar ends -->
+    <footer>
+      <p>
+        Est. 1987
+      </p>
+      <p>
+        Maison Soleil · 12 Rue des Oliviers · Cassis
+      </p>
+      <p>
+        © 2026 Maison Soleil
+      </p>
+    </footer>
+  </aside>
+  
 
   <!-- Main content starts -->
+  <main class="main">
+    <header class="booking-header">
+      <p class="booking-header__confirmation">
+        Booking · Confirmed
+      </p>
+      <p class="booking-header__name">
+        Bienvenue, <span class="booking-header__first-name">Lucia.</span>
+      </p>
+      <button class="booking-header__btn">
+        Print receipt
+      </button>
+      <button class="booking-header__btn">
+         Add to calendar
+      </button>
+    </header>
 
-  Booking · Confirmed
-  Bienvenue, Lucia.
+    <!-- Booking cards start -->
+    <div class="booking-content">
+      <!-- Receipt card -->
+      <div class="booking-content__stay">
+        <div class="booking-content__stay-header">
+          <div class="booking-content__stay-header-left">
+            <p>
+              Receipt
+            </p>
+            <p>
+              Your stay
+            </p>
+          </div>
+          <div class="booking-content__stay-header-right">
+            <p>
+              № MS-2026
+            </p>
+            <p>
+              0421-AH
+            </p>
+          </div>
+        </div>
+        <div class="checkinout">
+          <div class="checkinout__checkin">
+            <p>
+              Check in
+            </p>
+            <p>
+              25 Apr
+            </p>
+            <p>
+              Saturday · 15:00
+            </p>
+          </div>
+          <div class="checkinout__checkout">
+            <p>
+              Check out
+            </p>
+            <p>
+              29 Apr
+            </p>
+            <p>
+              Wednesday · 11:00
+            </p>
+          </div>
+        </div>
+        <div class="stay-details">
+          <div class="stay-details__room-nights">
+            <p>
+              Room · La Garrigue · 4 nights
+            </p>
+            <p>
+              € 620.00
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="booking-content__img-container">
+        <img class="booking-content__img" src="assets/images/icon-sun.svg" alt="Sunny">
+      </div>
+      <div class="booking-content__host-note">
 
-  Print receipt
-  Add to calendar
+      </div>
+    </div>
+  </main>
 
-  <!-- Booking cards start -->
+  
+  
 
-  <!-- Receipt card -->
-  Receipt
-  № MS-2026
-  0421-AH
+  
+ 
 
-  Your stay
 
-  Check in
-  25 Apr
-  Saturday · 15:00
 
-  Check out
-  29 Apr
-  Wednesday · 11:00
 
-  Room · La Garrigue · 4 nights
-  € 620.00
+
+
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
   Breakfast · 2 guests
   € 96.00
   Tourist tax
