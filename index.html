@@ -23,7 +23,7 @@
   <aside class="sidebar">
     <div class="sidebar__profile">
       <div class="sidevar__img-container"></div>
-      <img  src="assets/images/icon-sun.svg">
+      <img  src="assets/images/icon-sun.svg" alt="">
       <p class="sidebar__name">
         <span class="sidebar__first-name">Maison</span> Soleil
       </p>
@@ -69,9 +69,9 @@
       <p class="booking-header__confirmation">
         Booking · Confirmed
       </p>
-      <p class="booking-header__name">
+      <h1 class="booking-header__name">
         Bienvenue, <span class="booking-header__first-name">Lucia.</span>
-      </p>
+      </h1>
       <button class="booking-header__btn">
         Print receipt
       </button>
@@ -82,8 +82,9 @@
 
     <!-- Booking cards start -->
     <div class="booking-content">
+
       <!-- Receipt card -->
-      <div class="booking-content__stay">
+      <section class="booking-content__stay">
         <div class="booking-content__stay-header">
           <div class="booking-content__stay-header-left">
             <p>
@@ -135,88 +136,171 @@
               € 620.00
             </p>
           </div>
+          <div class="stay-details__meals">
+            <p>
+              Breakfast · 2 guests
+            </p>
+            <p>
+              € 96.00
+            </p>
+          </div>
+          <div class="stay-details__tax">
+            <p>
+              Tourist tax
+            </p>
+            <p>
+              € 14.40
+            </p>
+          </div>
+          <div class="stay-details__total-fee">
+            <p>
+              Total paid
+            </p>
+            <p>
+              € 730.40
+            </p>
+          </div>
+          <div class="stay-details__payment-summary">
+            <p>
+              Paid · Wise · GBP
+            </p>
+            <img src="assets/images/icon-barcode.svg" alt="payment barcode">
+          </div>
         </div>
-      </div>
+      </section>
       <div class="booking-content__img-container">
         <img class="booking-content__img" src="assets/images/icon-sun.svg" alt="Sunny">
       </div>
-      <div class="booking-content__host-note">
 
-      </div>
+      <!-- Note from host card -->
+      <section class="booking-content__host-note">
+        <div class="host-note__header">
+          <h2>
+            Welcome
+          </h2>
+          <img src="assets/images/icon-sun.svg" alt="The sun">
+        </div>
+        <div class="host-note__message">
+          <p class="host-note__message-greetings">
+            A note from your host,
+          </p>
+          <p class="host-note__message-host-name">
+            Margaux.
+          </p>
+          <p class="host-note__message-text">
+            We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
+          </p>
+          <p class="host-note__message-regards">
+            Room
+          </p>
+          <p class="host-note__message-signature">
+            La Garrigue
+          </p>
+        </div>
+      </section>
+      <!-- Booking cards end -->
+
+      <!-- Guest info row starts -->
+       <section class="info-row">
+
+        <!-- Arrival -->
+        <section class="arrival">
+          <div class="arrival__header">
+            <div class="arrival__title">
+              <img src="assets/images/icon-key.svg" alt="">
+              <h2>
+                Arrival
+              </h2>
+            </div>
+            <div class="arrival__row-num">
+              <p>
+                01
+              </p>
+            </div>
+          </div>
+          <p class="arrival__checkin-time">
+            Check-in from 15:00
+          </p>
+          <p class="arrival__checkin-date">
+            Sat, 25 April
+          </p>
+          <p class="arrival__checkin-message">
+            Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+          </p>
+        </section>
+
+        <!-- Wifi -->
+        <section class="wifi">
+          <div class="wifi__header">
+            <div class="wifi__title">
+              <img src="assets/images/icon-wifi.svg" alt="">
+              <h2>
+                Wifi
+              </h2>
+            </div>
+            <div class="wifi__row-num">
+              <p>
+                02
+              </p>
+            </div>
+          </div>
+          <p class="wifi__guest-name">
+            Le Soleil · Guest
+          </p>
+          <p class="wifi__position-indicator">
+            Password below
+          </p>
+          <div class="wifi__network-info">
+            <p class="wifi__network">
+              Network
+            </p>
+            <p class="wifi__username">
+              Le Soleil · Guest
+            </p>
+          </div>
+          <div class="wifi__password-info">
+            <p class="wifi__password-header">
+              Password
+            </p>
+            <p class="wifi__password">
+              soleil-2026
+            </p>
+            <button class="wifi__password-copy">
+              Copy
+            </button>
+          </div>
+        </section>
+
+        <!-- Breakfast -->
+        <section class="breakfast">
+          <div class="breakfast__header">
+            <div class="breakfast__title">
+              <img src="assets/images/icon-breakfast.svg" alt="">
+              <h2>
+                Breakfast
+              </h2>
+            </div>
+            <div class="breakfast__row-num">
+              <p>
+                03
+              </p>
+            </div>
+          </div>
+          <p class="breakfast__time">
+            Served 8 - 10:30
+          </p>
+          <p class="breakfast__location">
+            On the terrace
+          </p>
+          <p class="breakfast__content">
+            Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+          </p>
+        </section>
+      </section>
+       <!-- Guest info row ends -->
+
     </div>
   </main>
-
-  
-  
-
-  
- 
-
-
-
-
-
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  Breakfast · 2 guests
-  € 96.00
-  Tourist tax
-  € 14.40
-
-  Total paid
-  € 730.40
-
-  Paid · Wise · GBP
-  <!-- Barcode image -->
-
-  <!-- Note from host card -->
-  Welcome
-  A note from your host, Margaux.
-  We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-  Room
-  La Garrigue
-
-  <!-- Booking cards end -->
-
-  <!-- Guest info row starts -->
-
-  <!-- Arrival -->
-  Arrival
-  01
-  Check-in from 15:00
-  Sat, 25 April
-  Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
-
-  <!-- Wifi -->
-  Wifi
-  02
-  Le Soleil · Guest
-  Password below
-  Network
-  Le Soleil · Guest
-  Password
-  soleil-2026
-  Copy
-
-  <!-- Breakfast -->
-  Breakfast
-  03
-  Served 8 - 10:30
-  On the terrace
-  Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
-
-  <!-- Guest info row ends -->
 
   <!-- Main content ends -->
 
