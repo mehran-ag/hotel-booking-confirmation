@@ -1,12 +1,376 @@
 body {
+  background-color: var(--Neutral-100);
   display: grid;
   grid-template-columns: 280px 1fr;
   min-height: 100vh;
 }
 
 .sidebar {
-  min-height: 100vh;
-  padding: 2rem;
+  min-block-size: 100vh;
+  padding: .5rem 1rem;
   display: flex;
   flex-direction: column;
+  border-inline-end: 1px solid var(--gray);
+}
+
+.main {
+  padding: clamp(0.1rem, 2vh, 0.5rem) clamp(0.7rem, 2vw, 2rem);
+  min-block-size: 100vh;
+}
+
+.sidebar__profile {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+
+.sidebar__img-container {
+  height: 2.0rem;
+  width: auto;
+}
+
+.sidebar img {
+  height: 100%;
+}
+
+.sidebar__profile p {
+  margin: 0;
+  margin-inline-start: 0.5rem;
+  padding: 0;
+  font-weight: 600;
+}
+
+.sidebar__last-name {
+  color: var(--Terracotta-700);
+}
+
+.sidebar-main {
+  border-block-start: 1px solid var(--gray);
+  border-block-end: 1px solid var(--gray);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__link {
+  text-decoration: none;
+  color: var(--faded-black);
+  margin: 0.1rem 0;
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__link:nth-child(1) {
+  margin-block-start: 1rem;
+}
+
+.sidebar__link:hover {
+  border-radius: 0.5rem;
+  background-color: var(--Neutral-0);
+}
+
+.sidebar__notification {
+  margin-inline-start: auto;
+  background-color: var(--Rose-500);
+  color: var(--Neutral-0);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.sidebar__link img {
+  margin-inline-end: 0.5rem;
+}
+
+.sidebar__weather-card {
+  background-color: var(--Sun-200);
+  width: 100%;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px var(--shadow);
+}
+
+.sidebar__weather-card img {
+  height: 4rem;
+  width: auto;
+  position: absolute;
+  right: -0.8rem;
+  top: -1rem;
+}
+
+.sidebar__weather-card p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.sidebar__weather-location {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.sidebar__weather-temperature {
+  font-size: 3rem;
+}
+
+.sidebar__weather-condition {
+  font-size: 0.7rem;
+  color: var(--gray);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking-header__confirmation {
+  text-transform: uppercase;
+  color: var(--faded-text);
+  font-size: 0.8rem;
+}
+
+.booking-header__first-name {
+  font-style: italic;
+  color: var(--Terracotta-600)
+}
+
+
+.booking-header__message * {
+  margin: 0.1rem 0;
+  padding: 0.1rem 0;
+}
+
+.booking-header__btn {
+  padding: 0.7em 1.5em;
+  border-radius: 5em;
+  border: none;
+  background-color: var(--Neutral-400);
+  color: var(--black);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.booking-header__btn:hover {
+  background-color: var(--faded-black);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.booking-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+  padding: 4rem 10%;
+  align-items: center;
+}
+
+.stay-card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--Neutral-0);
+  border-radius: 1rem;
+  transform: rotate(5deg);
+}
+
+.stay-card__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-block-end: 1px solid var(--gray);
+}
+
+.stay-card__header * {
+  padding: 0.3rem 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--faded-text);
+}
+
+.stay-card__header-stay {
+  font-size: 1.8rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.stay-card__header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.checkinout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.25rem 4rem;
+  border-block-end: 1px solid var(--gray);
+}
+
+.checkinout * {
+  text-transform: uppercase;
+  color: var(--faded-text);
+  padding: 0.3rem 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.checkinout__date {
+  text-transform: none;
+  color: var(--black);
+  font-size: 3rem;
+}
+
+.checkinout__checkin,
+.checkinout__checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stay-details {
+  display: flex;
+  flex-direction: column;
+  color: var(--faded-text);
+}
+
+.stay-details div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stay-details__total-fee {
+  border-block-start: 1px solid var(--black);
+}
+
+.stay-details__total-fee-paid {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.stay-details__total-text {
+  text-transform: uppercase;
+}
+
+.stay-details__payment-summary {
+  text-transform: uppercase;
+}
+
+.booking-content__img-container {
+  width: clamp(4rem, 10%, 8rem);
+  margin: clamp(1rem, 2%, 3rem);
+}
+
+.booking-content__img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.host-note {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  transform: rotate(-5deg);
+  background-image: radial-gradient(circle at 90% 11%,
+      var(--Sun-500),
+      var(--Terracotta-500),
+      var(--Terracotta-700));
+  color: var(--white);
+}
+
+.host-note__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-block-start: 1px dashed var(--white);
+  margin-block-start: 1.2rem;
+  height: 4rem;
+}
+
+.host-note__header h2 {
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.host-note__header img {
+  height: 80%;
+  width: auto;
+}
+
+.host-note__message {
+  margin-block-start: 4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.host-note__message-greetings {
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+.host-note__message-host-name {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.host-note__message-text {
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 2em;
+}
+
+.host-note__signature {
+  margin-block-start: auto;
+}
+
+.host-note__signature-regards {
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.host-note__signature-name {
+  font-size: 1.2rem;
+  margin-block-start: 0.7rem;
+  margin-block-end: 1rem;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
 }

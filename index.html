@@ -22,34 +22,56 @@
   <!-- Sidebar starts -->
   <aside class="sidebar">
     <div class="sidebar__profile">
-      <div class="sidevar__img-container"></div>
-      <img  src="assets/images/icon-sun.svg" alt="">
-      <p class="sidebar__name">
-        <span class="sidebar__first-name">Maison</span> Soleil
-      </p>
+      <div class="sidebar__img-container">
+        <img  src="assets/images/illustration-sun.svg" alt="">
+      </div>
+      <div class="sidebar__name">
+        <p class="sidebar__last-name fraunces-400-italic">
+          Maison
+        </p>
+        <p class="sidebar__first-name fraunces-400-reg">
+          Soleil
+        </p>
+      </div>
     </div>
 
+    <div class="sidebar-main">
       <!-- Guest navigation -->
-    <nav class="sidebar__nav">
-      <a href="#" class="sidebar__link">
-        <span class="sidebar__link-text">Your stay</span>
-        <span class="sidebar__notification">1</span>
-      </a>
-      <a href="#" class="sidebar__link">The house</a>
-      <a href="#" class="sidebar__link">Around town</a>
-      <a href="#" class="sidebar__link">Breakfast</a>
-      <a href="#" class="sidebar__link">Messages</a>
-    </nav>
+      <nav class="sidebar__nav">
+        <a href="#" class="sidebar__link">
+          <img src="./assets/images/icon-bed.svg" alt="" class="sidebar__icon">
+          <span class="sidebar__link-text">Your stay</span>
+          <span class="sidebar__notification dm-sans-400">1</span>
+        </a>
+        <a href="#" class="sidebar__link">
+          <img src="./assets/images/icon-house.svg" alt="" class="sidebar__icon">
+          <span class="sidebar__link-text">The house</span>
+        </a>
+        <a href="#" class="sidebar__link">
+          <img src="./assets/images/icon-pin.svg" alt="" class="sidebar__icon">
+          <span class="sidebar__link-text">Around town</span>
+        </a>
+        <a href="#" class="sidebar__link">
+          <img src="./assets/images/icon-breakfast-outline.svg" alt="" class="sidebar__icon">
+          <span class="sidebar__link-text">Breakfast</span>
+        </a>
+        <a href="#" class="sidebar__link">
+          <img src="./assets/images/icon-mail.svg" alt="" class="sidebar__icon">
+          <span class="sidebar__link-text">Messages</span>
+        </a>
+      </nav>
 
-    <!-- Local weather -->
-    <div class="sidebar__weather-card">
-      <p class="sidebar__weather__location">Today in Cassis</p>
-      <p class="sidebar__weather__temperature">27°</p>
-      <p class="sidebar__weather__condition">Sunny · light breeze</p>
+      <!-- Local weather -->
+      <div class="sidebar__weather-card">
+        <img src="assets/images/icon-weather.svg" alt="">
+        <p class="sidebar__weather-location dm-mono-medium">TODAY IN CASSIS</p>
+        <p class="sidebar__weather-temperature fraunces-400-reg">27°</p>
+        <p class="sidebar__weather-condition dm-mono-regular">Sunny · light breeze</p>
+      </div>
     </div>
 
     <!-- Sidebar ends -->
-    <footer>
+    <footer class="sidebar-footer">
       <p>
         Est. 1987
       </p>
@@ -66,35 +88,39 @@
   <!-- Main content starts -->
   <main class="main">
     <header class="booking-header">
-      <p class="booking-header__confirmation">
-        Booking · Confirmed
-      </p>
-      <h1 class="booking-header__name">
-        Bienvenue, <span class="booking-header__first-name">Lucia.</span>
-      </h1>
-      <button class="booking-header__btn">
-        Print receipt
-      </button>
-      <button class="booking-header__btn">
-         Add to calendar
-      </button>
+      <div class="booking-header__message">
+        <p class="booking-header__confirmation dm-mono-regular">
+          Booking &middot; Confirmed
+        </p>
+        <h1 class="booking-header__name fraunces-400-reg">
+          Bienvenue, <span class="booking-header__first-name">Lucia.</span>
+        </h1>
+      </div>
+      <div class="booking-header__buttons">
+        <button class="booking-header__btn dm-sans-400">
+          Print receipt
+        </button>
+        <button class="booking-header__btn dm-sans-400">
+          Add to calendar
+        </button>
+      </div>
     </header>
 
     <!-- Booking cards start -->
     <div class="booking-content">
 
       <!-- Receipt card -->
-      <section class="booking-content__stay">
-        <div class="booking-content__stay-header">
-          <div class="booking-content__stay-header-left">
-            <p>
+      <section class="stay-card">
+        <div class="stay-card__header">
+          <div class="stay-card__header-left">
+            <p class="stay-card__header-receipt dm-mono-regular">
               Receipt
             </p>
-            <p>
+            <p class="stay-card__header-stay">
               Your stay
             </p>
           </div>
-          <div class="booking-content__stay-header-right">
+          <div class="stay-card__header-right">
             <p>
               № MS-2026
             </p>
@@ -105,25 +131,25 @@
         </div>
         <div class="checkinout">
           <div class="checkinout__checkin">
-            <p>
+            <p class="dm-mono-regular">
               Check in
             </p>
-            <p>
+            <p class="checkinout__date fraunces-400-reg">
               25 Apr
             </p>
-            <p>
-              Saturday · 15:00
+            <p class="dm-mono-regular">
+              Saturday  &middot; 15:00
             </p>
           </div>
           <div class="checkinout__checkout">
-            <p>
+            <p class="dm-mono-regular">
               Check out
             </p>
-            <p>
+            <p class="checkinout__date fraunces-400-reg">
               29 Apr
             </p>
-            <p>
-              Wednesday · 11:00
+            <p class="dm-mono-regular">
+              Wednesday  &middot; 11:00
             </p>
           </div>
         </div>
@@ -132,7 +158,7 @@
             <p>
               Room · La Garrigue · 4 nights
             </p>
-            <p>
+            <p class="stay-details__fee">
               € 620.00
             </p>
           </div>
@@ -140,7 +166,7 @@
             <p>
               Breakfast · 2 guests
             </p>
-            <p>
+            <p class="stay-details__fee">
               € 96.00
             </p>
           </div>
@@ -148,15 +174,15 @@
             <p>
               Tourist tax
             </p>
-            <p>
+            <p class="stay-details__fee">
               € 14.40
             </p>
           </div>
           <div class="stay-details__total-fee">
-            <p>
+            <p class="stay-details__total-text">
               Total paid
             </p>
-            <p>
+            <p class="stay-details__total-fee-paid fraunces-400-reg">
               € 730.40
             </p>
           </div>
@@ -169,139 +195,139 @@
         </div>
       </section>
       <div class="booking-content__img-container">
-        <img class="booking-content__img" src="assets/images/icon-sun.svg" alt="Sunny">
+        <img class="booking-content__img" src="assets/images/illustration-sun.svg" alt="">
       </div>
 
       <!-- Note from host card -->
-      <section class="booking-content__host-note">
+      <section class="host-note">
         <div class="host-note__header">
           <h2>
-            Welcome
+            Welcome card
           </h2>
           <img src="assets/images/icon-sun.svg" alt="The sun">
         </div>
         <div class="host-note__message">
-          <p class="host-note__message-greetings">
+          <p class="host-note__message-greetings fraunces-400-italic">
             A note from your host,
           </p>
-          <p class="host-note__message-host-name">
+          <p class="host-note__message-host-name fraunces-400-italic">
             Margaux.
           </p>
-          <p class="host-note__message-text">
+          <p class="host-note__message-text dm-sans-400">
             We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
           </p>
-          <p class="host-note__message-regards">
-            Room
-          </p>
-          <p class="host-note__message-signature">
-            La Garrigue
-          </p>
+          <div class="host-note__signature">
+            <p class="host-note__signature-regards">
+              Room
+            </p>
+            <p class="host-note__signature-name">
+              La Garrigue
+            </p>
+          </div>
         </div>
       </section>
-      <!-- Booking cards end -->
+    </div>
+    <!-- Booking cards end -->
 
-      <!-- Guest info row starts -->
-       <section class="info-row">
+    <!-- Guest info row starts -->
+    <div class="info-row">
 
-        <!-- Arrival -->
-        <section class="arrival">
-          <div class="arrival__header">
-            <div class="arrival__title">
-              <img src="assets/images/icon-key.svg" alt="">
-              <h2>
-                Arrival
-              </h2>
-            </div>
-            <div class="arrival__row-num">
-              <p>
-                01
-              </p>
-            </div>
+      <!-- Arrival -->
+      <section class="arrival">
+        <div class="arrival__header">
+          <div class="arrival__title">
+            <img src="assets/images/icon-key.svg" alt="">
+            <h2>
+              Arrival
+            </h2>
           </div>
-          <p class="arrival__checkin-time">
-            Check-in from 15:00
-          </p>
-          <p class="arrival__checkin-date">
-            Sat, 25 April
-          </p>
-          <p class="arrival__checkin-message">
-            Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
-          </p>
-        </section>
-
-        <!-- Wifi -->
-        <section class="wifi">
-          <div class="wifi__header">
-            <div class="wifi__title">
-              <img src="assets/images/icon-wifi.svg" alt="">
-              <h2>
-                Wifi
-              </h2>
-            </div>
-            <div class="wifi__row-num">
-              <p>
-                02
-              </p>
-            </div>
+          <div class="arrival__row-num">
+            <p>
+              01
+            </p>
           </div>
-          <p class="wifi__guest-name">
+        </div>
+        <p class="arrival__checkin-time">
+          Check-in from 15:00
+        </p>
+        <p class="arrival__checkin-date">
+          Sat, 25 April
+        </p>
+        <p class="arrival__checkin-message">
+          Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+        </p>
+      </section>
+
+      <!-- Wifi -->
+      <section class="wifi">
+        <div class="wifi__header">
+          <div class="wifi__title">
+            <img src="assets/images/icon-wifi.svg" alt="">
+            <h2>
+              Wifi
+            </h2>
+          </div>
+          <div class="wifi__row-num">
+            <p>
+              02
+            </p>
+          </div>
+        </div>
+        <p class="wifi__guest-name">
+          Le Soleil · Guest
+        </p>
+        <p class="wifi__position-indicator">
+          Password below
+        </p>
+        <div class="wifi__network-info">
+          <p class="wifi__network">
+            Network
+          </p>
+          <p class="wifi__username">
             Le Soleil · Guest
           </p>
-          <p class="wifi__position-indicator">
-            Password below
+        </div>
+        <div class="wifi__password-info">
+          <p class="wifi__password-header">
+            Password
           </p>
-          <div class="wifi__network-info">
-            <p class="wifi__network">
-              Network
-            </p>
-            <p class="wifi__username">
-              Le Soleil · Guest
-            </p>
-          </div>
-          <div class="wifi__password-info">
-            <p class="wifi__password-header">
-              Password
-            </p>
-            <p class="wifi__password">
-              soleil-2026
-            </p>
-            <button class="wifi__password-copy">
-              Copy
-            </button>
-          </div>
-        </section>
-
-        <!-- Breakfast -->
-        <section class="breakfast">
-          <div class="breakfast__header">
-            <div class="breakfast__title">
-              <img src="assets/images/icon-breakfast.svg" alt="">
-              <h2>
-                Breakfast
-              </h2>
-            </div>
-            <div class="breakfast__row-num">
-              <p>
-                03
-              </p>
-            </div>
-          </div>
-          <p class="breakfast__time">
-            Served 8 - 10:30
+          <p class="wifi__password">
+            soleil-2026
           </p>
-          <p class="breakfast__location">
-            On the terrace
-          </p>
-          <p class="breakfast__content">
-            Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
-          </p>
-        </section>
+          <button class="wifi__password-copy">
+            Copy
+          </button>
+        </div>
       </section>
-       <!-- Guest info row ends -->
 
+      <!-- Breakfast -->
+      <section class="breakfast">
+        <div class="breakfast__header">
+          <div class="breakfast__title">
+            <img src="assets/images/icon-breakfast.svg" alt="">
+            <h2>
+              Breakfast
+            </h2>
+          </div>
+          <div class="breakfast__row-num">
+            <p>
+              03
+            </p>
+          </div>
+        </div>
+        <p class="breakfast__time">
+          Served 8 - 10:30
+        </p>
+        <p class="breakfast__location">
+          On the terrace
+        </p>
+        <p class="breakfast__content">
+          Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+        </p>
+      </section>
     </div>
+      <!-- Guest info row ends -->
   </main>
-
   <!-- Main content ends -->
 
   <footer class="attribution">

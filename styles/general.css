@@ -26,6 +26,18 @@
 
   --Rose-500: hsl(340, 48%, 52%);
 
+  --black: rgb(0, 0, 0);
+
+  --white: hsl(0, 0%, 100%);
+
+  --gray: rgba(0, 0, 0, 0.25);
+
+  --faded-black: rgba(0, 0, 0, 0.8);
+
+  --faded-text: rgba(0, 0, 0, 0.6);
+
+  --shadow: rgb(0 0 0 / 20%);
+
   --p-font: 14px;
 }
 
