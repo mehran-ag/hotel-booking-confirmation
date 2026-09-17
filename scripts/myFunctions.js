@@ -44,3 +44,44 @@ if (isDesktop.matches) {
     hostNote.classList.add('host-note');
   });
 };
+
+
+const hamMenu = document.querySelector('.js-ham-menu');
+
+const iconClose = document.querySelector('.js-icon-close');
+
+const sideBar = document.querySelector('.js-sidebar');
+
+const sidebarMain = document.querySelector('.js-sidebar-main');
+
+const sidebarFooter = document.querySelector('.js-sidebar-footer');
+
+hamMenu.addEventListener('click', () => {
+
+  sideBar.classList.remove('sidebar');
+
+  sideBar.classList.add('sidebar-show');
+
+  sidebarMain.style.display = 'flex';
+
+  sidebarFooter.style.display = 'flex';
+
+  hamMenu.style.display = 'none';
+
+  iconClose.style.display = 'flex';
+})
+
+iconClose.addEventListener('click', () => {
+
+  sideBar.classList.remove('sidebar-show');
+
+  sideBar.classList.add('sidebar');
+
+  sidebarMain.style.display = 'none';
+
+  sidebarFooter.style.display = 'none';
+
+  hamMenu.style.display = 'flex';
+
+  iconClose.style.display = 'none';
+})
