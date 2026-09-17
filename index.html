@@ -71,7 +71,7 @@
     </div>
 
     <!-- Sidebar ends -->
-    <footer class="sidebar-footer">
+    <footer class="sidebar-footer dm-mono-regular">
       <p>
         Est. 1987
       </p>
@@ -97,7 +97,7 @@
         </h1>
       </div>
       <div class="booking-header__buttons">
-        <button class="booking-header__btn dm-sans-400">
+        <button class="booking-header__btn dm-sans-400 js-print-screen">
           Print receipt
         </button>
         <button class="booking-header__btn dm-sans-400">
@@ -107,10 +107,10 @@
     </header>
 
     <!-- Booking cards start -->
-    <div class="booking-content">
+    <div class="booking-content js-booking-content">
 
       <!-- Receipt card -->
-      <section class="stay-card">
+      <section class="stay-card js-stay-card">
         <div class="stay-card__header">
           <div class="stay-card__header-left">
             <p class="stay-card__header-receipt dm-mono-regular">
@@ -199,7 +199,7 @@
       </div>
 
       <!-- Note from host card -->
-      <section class="host-note">
+      <section class="host-note js-host-note">
         <div class="host-note__header">
           <h2>
             Welcome card
@@ -233,24 +233,24 @@
     <div class="info-row">
 
       <!-- Arrival -->
-      <section class="arrival">
-        <div class="arrival__header">
-          <div class="arrival__title">
+      <section class="info-card arrival">
+        <div class="info-card__header arrival__header">
+          <div class="info-card__title arrival__title">
             <img src="assets/images/icon-key.svg" alt="">
-            <h2>
+            <h2 class="dm-mono-medium">
               Arrival
             </h2>
           </div>
-          <div class="arrival__row-num">
+          <div class="info-card__row-num fraunces-400-reg">
             <p>
               01
             </p>
           </div>
         </div>
-        <p class="arrival__checkin-time">
+        <p class="card-intro arrival__checkin-time fraunces-400-reg ">
           Check-in from 15:00
         </p>
-        <p class="arrival__checkin-date">
+        <p class="card-subintro arrival__checkin-date dm-sans-400">
           Sat, 25 April
         </p>
         <p class="arrival__checkin-message">
@@ -259,66 +259,68 @@
       </section>
 
       <!-- Wifi -->
-      <section class="wifi">
-        <div class="wifi__header">
-          <div class="wifi__title">
+      <section class="info-card wifi">
+        <div class="info-card__header wifi__header">
+          <div class="info-card__title wifi__title">
             <img src="assets/images/icon-wifi.svg" alt="">
-            <h2>
+            <h2 class="dm-mono-medium">
               Wifi
             </h2>
           </div>
-          <div class="wifi__row-num">
+          <div class="info-card__row-num fraunces-400-reg">
             <p>
               02
             </p>
           </div>
         </div>
-        <p class="wifi__guest-name">
+        <p class="card-intro  wifi__guest-name fraunces-400-reg ">
           Le Soleil · Guest
         </p>
-        <p class="wifi__position-indicator">
+        <p class="card-subintro wifi__position-indicator dm-sans-400">
           Password below
         </p>
         <div class="wifi__network-info">
-          <p class="wifi__network">
+          <p class="wifi__network-header dm-sans-500">
             Network
           </p>
-          <p class="wifi__username">
+          <p class="wifi__username dm-sans-500">
             Le Soleil · Guest
           </p>
         </div>
         <div class="wifi__password-info">
-          <p class="wifi__password-header">
+          <p class="wifi__password-header dm-sans-500">
             Password
           </p>
-          <p class="wifi__password">
-            soleil-2026
-          </p>
-          <button class="wifi__password-copy">
-            Copy
-          </button>
+          <div class="wifi__password-and-btn">
+            <p class="wifi__password dm-sans-500 js-wifi-password">
+              soleil-2026
+            </p>
+            <button class="wifi__password-copy dm-sans-500 js-wifi__password-copy">
+              Copy
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- Breakfast -->
-      <section class="breakfast">
-        <div class="breakfast__header">
-          <div class="breakfast__title">
+      <section class="info-card breakfast">
+        <div class="info-card__header breakfast__header">
+          <div class="info-card__title breakfast__title">
             <img src="assets/images/icon-breakfast.svg" alt="">
-            <h2>
+            <h2 class="dm-mono-medium">
               Breakfast
             </h2>
           </div>
-          <div class="breakfast__row-num">
+          <div class="info-card__row-num fraunces-400-reg">
             <p>
               03
             </p>
           </div>
         </div>
-        <p class="breakfast__time">
+        <p class="card-intro breakfast__time fraunces-400-reg ">
           Served 8 - 10:30
         </p>
-        <p class="breakfast__location">
+        <p class="card-subintro breakfast__location dm-sans-400">
           On the terrace
         </p>
         <p class="breakfast__content">
@@ -332,7 +334,9 @@
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.github.com/mehran-ag">Mehran</a>.
   </footer>
+
+  <script src="scripts/myFunctions.js"></script>
 </body>
 </html>
