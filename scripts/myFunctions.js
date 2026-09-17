@@ -18,22 +18,29 @@ printButton.addEventListener("click", () => {
   window.print();
 });
 
+
+const isDesktop = window.matchMedia("(min-width: 769px)");
+
+
 const bookingContent = document.querySelector('.js-booking-content');
 const stayCard = document.querySelector('.js-stay-card');
 const hostNote = document.querySelector('.js-host-note');
 
-bookingContent.addEventListener("mouseenter", () => {
-  stayCard.classList.remove('stay-card');
-  stayCard.classList.add('stay-card-packed');
 
-  hostNote.classList.remove('host-note');
-  hostNote.classList.add('host-note-packed');
-});
+if (isDesktop.matches) {
+  bookingContent.addEventListener("mouseenter", () => {
+    stayCard.classList.remove('stay-card');
+    stayCard.classList.add('stay-card-packed');
 
-bookingContent.addEventListener("mouseleave", () => {
-  stayCard.classList.remove('stay-card-packed');
-  stayCard.classList.add('stay-card');
+    hostNote.classList.remove('host-note');
+    hostNote.classList.add('host-note-packed');
+  });
 
-  hostNote.classList.remove('host-note-packed');
-  hostNote.classList.add('host-note');
-});
+  bookingContent.addEventListener("mouseleave", () => {
+    stayCard.classList.remove('stay-card-packed');
+    stayCard.classList.add('stay-card');
+
+    hostNote.classList.remove('host-note-packed');
+    hostNote.classList.add('host-note');
+  });
+};

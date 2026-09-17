@@ -94,6 +94,6 @@
   font-style: normal;
 }
 
-p {
+body * {
   box-sizing: border-box;
 }
